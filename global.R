@@ -1,4 +1,8 @@
 
+
+if (!exists("needHack")) needHack <- FALSE
+
+
 if (needHack)
 {
     frag = tagList(
