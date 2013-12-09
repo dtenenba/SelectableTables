@@ -5,6 +5,7 @@ if (!exists("needHack")) needHack <- FALSE
 
 if (needHack)
 {
+    # FIXME, this should be system.file (not file.path) if used in a package
     addResourcePath("js", file.path("www", "js"))
     frag = tagList(
         HTML("<script type='text/javascript'>"),
