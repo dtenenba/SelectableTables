@@ -5,13 +5,12 @@ if (!exists("needHack")) needHack <- FALSE
 
 if (needHack)
 {
+    addResourcePath("js", file.path("www", "js"))
     frag = tagList(
         HTML("<script type='text/javascript'>"),
         includeHTML(file.path("www", "js", "DTbinding.js")), # change this to system.file when putting this into a package
         HTML("</script>")
     )
-} else {
-    frag =     tags$script(src = "js/DTbinding.js")
 }
 
 selDataTableOutput <- function (outputId) 
@@ -31,6 +30,6 @@ selDataTableOutput <- function (outputId)
                user-select: none;}"),                          
     tags$script(src = "shared/datatables/js/jquery.dataTables.min.js"), 
     tags$script(src = "shared/datatables/js/DT_bootstrap.js"),
-    frag)),
+    tags$script(src = "js/DTbinding.js"))),
     div(id = outputId, class = "shiny-datatable-output selectable"))
 }
