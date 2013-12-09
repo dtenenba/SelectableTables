@@ -7,11 +7,6 @@ if (needHack)
 {
     # FIXME, this should be system.file (not file.path) if used in a package
     addResourcePath("js", file.path("www", "js"))
-    frag = tagList(
-        HTML("<script type='text/javascript'>"),
-        includeHTML(file.path("www", "js", "DTbinding.js")), # change this to system.file when putting this into a package
-        HTML("</script>")
-    )
 }
 
 selDataTableOutput <- function (outputId) 
