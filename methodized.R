@@ -1,5 +1,5 @@
 
-needHack <- TRUE # change to false if problem referenced here is solved:
+needHack <- TRUE # change to false if problem referenced here is solved: 
 # https://groups.google.com/forum/#!topic/shiny-discuss/Lhdi7A_csR4
 
 # Note that if needHack is true, you'll have to (I think) restart the shiny app
