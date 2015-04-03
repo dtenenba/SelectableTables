@@ -6,7 +6,7 @@ shinyServer(function(input, output) {
   
   # observe({
   #   print("Click Event")
-  #   print(input$myTable)
+  #   print(input$myTable)   
   #   })
 
  observe({
