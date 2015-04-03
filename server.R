@@ -4,7 +4,7 @@ shinyServer(function(input, output) {
   
   output$myTable <- renderDataTable({mtcars}, options = list(bSortClasses = TRUE))
   
-  # observe({
+  # observe({ 
   #   print("Click Event")
   #   print(input$myTable)
   #   })
