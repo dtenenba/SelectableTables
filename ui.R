@@ -13,6 +13,6 @@ shinyUI(pageWithSidebar(
   
   mainPanel(
     selDataTableOutput("myTable")
-  )
+  ) 
 )
 )
